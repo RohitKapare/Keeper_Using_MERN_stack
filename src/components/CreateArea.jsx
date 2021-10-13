@@ -19,7 +19,7 @@ function CreateArea(props) {
 
   function submitNote(e) {
     e.preventDefault();
-    props.addNote(newNote);
+    props.onAdd(newNote);
     setNewNote({
       title: "",
       content: ""
